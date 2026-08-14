@@ -299,7 +299,7 @@ The `.env` file must never be uploaded to GitHub.
 
 🚀 **Try MindSupport AI Online:**
 
-[Open MindSupport AI](mindsupport-ai-3txitmyqtp6zvrlgshmg6q.streamlit.app)
+ Streamlit  app link = mindsupport-ai-3txitmyqtp6zvrlgshmg6q.streamlit.app
 
 The application is deployed using Streamlit Community Cloud and is available online for demonstration and academic research purposes.
 
@@ -341,18 +341,9 @@ app.py
 For deployment, add the following secret:
 
 ```toml
-OPENROUTER_API_KEY = "your_api_key_here"
+OPENROUTER_API_KEY = "my_api_key_here"
 ```
-
-> ⚠️ Do not add your actual API key to this README file or GitHub source code.
-
-After successful deployment, the application will be available through a public Streamlit URL.
-
-Example:
-
-```text
-https://mind-support-ai.streamlit.app
-```
+ 
 
 ---
 
