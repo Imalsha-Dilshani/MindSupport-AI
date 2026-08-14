@@ -8,9 +8,17 @@
 
 MindSupport AI is an AI-powered chatbot prototype developed to provide general emotional support and practical stress-management guidance for university students.
 
-The system is designed as part of an academic research project exploring the role of Artificial Intelligence in supporting university students' mental health in Sri Lanka.
+The system is developed as part of an academic research project exploring the role of Artificial Intelligence in supporting university students' mental health in Sri Lanka.
 
-The chatbot focuses mainly on helping students manage common university-related challenges such as academic stress, examination pressure, assignment workload, anxiety, time-management difficulties, and general emotional difficulties.
+The chatbot focuses on common university-related challenges such as:
+
+- 📚 Academic stress
+- 📝 Assignment workload
+- 📝 Examination pressure
+- 😟 Anxiety
+- ⏰ Time-management difficulties
+- 💭 Feeling overwhelmed
+- 🌱 General emotional wellbeing
 
 ---
 
@@ -24,7 +32,7 @@ The chatbot focuses mainly on helping students manage common university-related 
 
 The aim of MindSupport AI is to explore how Artificial Intelligence can be used as an accessible and supportive tool to help university students manage stress and improve their general emotional wellbeing.
 
-The system is intended to provide initial support and practical stress-management suggestions while encouraging students to seek professional help when necessary.
+The system provides general wellbeing support, practical stress-management suggestions, and encourages students to seek professional support when necessary.
 
 ---
 
@@ -36,7 +44,9 @@ Students can communicate with the AI chatbot about their feelings, academic diff
 
 ### 🌱 Mood Check-In
 
-Students can select their current mood from several options:
+Students can identify their current mood and communicate how they are feeling.
+
+Example moods include:
 
 - 😊 Happy
 - 🙂 Okay
@@ -52,11 +62,11 @@ Students can rate their current stress level from:
 
 **1 – Low Stress → 10 – Very High Stress**
 
-The system uses the selected stress level to provide more appropriate supportive guidance.
+The system uses the selected stress level to provide appropriate supportive guidance.
 
 ### 💡 Quick Stress Help
 
-The application provides quick-access support options including:
+The application provides quick-access support options such as:
 
 - 🧘 Breathing Exercise
 - 📚 Exam Stress
@@ -73,27 +83,15 @@ The AI can provide practical suggestions such as:
 - Short relaxation breaks
 - Task prioritization
 - Breaking large tasks into smaller tasks
-- Pomodoro-style study sessions
+- Study planning
 - Time-management techniques
 - Healthy study routines
 - Sleep and relaxation suggestions
 - Talking with trusted people
 
-### 🛡️ Mental Health Safety
-
-The chatbot is designed with safety instructions to:
-
-- Avoid diagnosing mental-health disorders
-- Avoid prescribing medication
-- Avoid pretending to be a doctor or psychologist
-- Encourage professional support when appropriate
-- Provide additional safety guidance for serious distress
-
 ---
 
 ## 🛠️ Technologies Used
-
-The project was developed using the following technologies:
 
 | Technology | Purpose |
 |---|---|
@@ -119,23 +117,89 @@ MindSupport-AI/
 ├── .gitignore
 ├── .env
 └── venv/
- 
+```
+
+### File Description
+
+- **app.py** – Main Streamlit application.
+- **requirements.txt** – Required Python packages.
+- **README.md** – Project documentation.
+- **.gitignore** – Files and folders that should not be uploaded to GitHub.
+- **.env** – Local API key configuration.
+- **venv/** – Python virtual environment.
+
+> ⚠️ The `.env` file and `venv/` folder should not be uploaded to GitHub.
+
 ---
 
 ## ⚙️ Installation
 
-Step 1 – Clone the Repository
+Follow the steps below to install and run MindSupport AI locally.
+
+### Step 1 – Clone the Repository
+
+Clone the GitHub repository using:
+
+```bash
 git clone https://github.com/Imalsha-Dilshani/MindSupport-AI.git
+```
+
+### Step 2 – Open the Project Directory
+
+```bash
+cd MindSupport-AI
+```
+
+### Step 3 – Create a Virtual Environment
+
+```bash
+py -m venv venv
+```
+
+### Step 4 – Activate the Virtual Environment
+
+For Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+### Step 5 – Install Dependencies
+
+```bash
+py -m pip install -r requirements.txt
+```
 
 ---
 
 ## 🔑 API Configuration
 
-The application uses an OpenRouter API key to communicate with the AI model.
+The application uses the **OpenRouter API** to communicate with the AI model.
 
-Create a .env file in the project root directory.
+Create a `.env` file in the project root directory.
 
-OPENROUTER_API_KEY=my_api_key_here
+Add:
+
+```env
+OPENROUTER_API_KEY=your_api_key_here
+```
+
+Replace `your_api_key_here` with your own OpenRouter API key.
+
+### ⚠️ API Key Security
+
+**Never upload your API key to GitHub.**
+
+The `.gitignore` file should contain:
+
+```text
+.env
+venv/
+__pycache__/
+*.pyc
+```
+
+The `.env` file should remain only on your local computer.
 
 ---
 
@@ -143,28 +207,276 @@ OPENROUTER_API_KEY=my_api_key_here
 
 After activating the virtual environment, run:
 
+```bash
 py -m streamlit run app.py
+```
 
-The application will open in a browser.
+The application will open in your web browser.
 
-Usually, the local application will be available at:
+The local application is usually available at:
 
+```text
 http://localhost:8501
+```
+
+---
+
+## 💬 Example Usage
+
+A student can select a stress level such as:
+
+**Stress Level:**
+
+> 7/10
+
+The application can then provide appropriate supportive guidance.
+
+For example, if a student says:
+
+> I have many assignments and exams coming up. I feel overwhelmed.
+
+The chatbot can provide suggestions such as:
+
+1. List all assignments and exams.
+2. Identify the most urgent tasks.
+3. Break large assignments into smaller tasks.
+4. Create a realistic study schedule.
+5. Take short breaks between study sessions.
+6. Practice simple breathing or relaxation exercises.
+7. Talk to someone you trust if the stress becomes difficult to manage.
+
+---
+
+## 🧠 AI Support Areas
+
+MindSupport AI is designed to provide general support related to:
+
+- 📚 Academic stress
+- 📝 Assignment stress
+- 📝 Examination stress
+- ⏰ Time-management difficulties
+- 😟 Anxiety
+- 😞 Feeling overwhelmed
+- 🌱 General emotional wellbeing
+- 🧘 Relaxation
+- 🫁 Breathing exercises
+- 😴 Sleep and rest
+- ⚖️ Study-life balance
+
+---
+
+## 🛡️ Safety and Ethical Considerations
+
+MindSupport AI is designed as a supportive AI tool and not as a medical or clinical system.
+
+The chatbot:
+
+- Does not diagnose mental-health disorders.
+- Does not prescribe medication.
+- Does not provide medical treatment.
+- Does not replace psychologists, counsellors, doctors, or other qualified professionals.
+- Provides general wellbeing and stress-management guidance.
+- Encourages users to seek professional support when appropriate.
+
+If a user indicates serious emotional distress, self-harm, suicide, or immediate danger, the system should encourage the user to seek appropriate professional or emergency support.
+
+---
+
+## 🔐 Privacy
+
+Privacy is an important consideration in the development of this application.
+
+Users should avoid entering highly sensitive personal information into the chatbot.
+
+The application should not intentionally collect unnecessary personal information.
+
+API credentials are stored using environment variables and should not be included directly in the source code.
+
+The `.env` file must never be uploaded to GitHub.
 
 ---
 
 ## 🌐 Deployment
 
-The application can be deployed using Streamlit Community Cloud.
+MindSupport AI can be deployed using **Streamlit Community Cloud**.
+
+### Deployment Steps
+
+1. Push the project source code to GitHub.
+2. Open Streamlit Community Cloud.
+3. Sign in using GitHub.
+4. Create a new application.
+5. Select the repository:
+
+```text
+Imalsha-Dilshani/MindSupport-AI
+```
+
+6. Select the branch:
+
+```text
+main
+```
+
+7. Select the main application file:
+
+```text
+app.py
+```
+
+8. Add the API key using Streamlit Secrets.
+9. Deploy the application.
+
+### Streamlit Secrets
+
+For deployment, add the following secret:
+
+```toml
+OPENROUTER_API_KEY = "your_api_key_here"
+```
+
+> ⚠️ Do not add your actual API key to this README file or GitHub source code.
+
+After successful deployment, the application will be available through a public Streamlit URL.
+
+Example:
+
+```text
+https://mind-support-ai.streamlit.app
+```
+
+---
+
+## 📊 Research Context
+
+This application was developed for the research topic:
+
+**The Role of Artificial Intelligence in Supporting University Students' Mental Health in Sri Lanka**
+
+The prototype demonstrates how Artificial Intelligence can be integrated into a web-based application to provide accessible initial support and practical stress-management guidance for university students.
+
+The research focuses on the potential role of AI in supporting students who experience:
+
+- Academic pressure
+- Examination stress
+- Assignment workload
+- Anxiety
+- Time-management difficulties
+- General stress and emotional difficulties
+
+---
+
+## 🎯 Research Objectives Supported by the Prototype
+
+The prototype supports the investigation of:
+
+1. To explore how Artificial Intelligence can provide accessible stress-management support to university students.
+
+2. To examine students' perceptions of the usefulness of AI-based mental-health support.
+
+3. To identify the potential benefits and limitations of using AI chatbots for student wellbeing.
+
+4. To examine important considerations such as trust, privacy, safety, and the need for professional support.
+
+---
+
+## 🔬 Research Evaluation
+
+The prototype can be evaluated using factors such as:
+
+- Perceived usefulness
+- Ease of use
+- Accessibility
+- User satisfaction
+- Trust in AI
+- Privacy concerns
+- Willingness to use AI-based support
+- Perceived effectiveness of stress-management suggestions
+
+The findings can be used to understand how university students perceive AI-based mental-health and stress-management support.
+
+---
+
+## 🔮 Future Improvements
+
+Future versions of MindSupport AI may include:
+
+- 🇱🇰 Sinhala language support
+- 🇬🇧 English language support
+- 🌐 Sinhala-English bilingual conversations
+- 📈 Personal wellbeing dashboard
+- 📝 Daily mood tracking
+- 🔔 Study and relaxation reminders
+- 👩‍⚕️ Professional-support directory
+- 🔐 Improved privacy controls
+- 📱 Mobile-friendly interface
+- 📊 Anonymous research analytics
+- 🧠 More advanced personalized wellbeing recommendations
+
+---
+
+## 🧪 Project Status
+
+**Current Status: Prototype**
+
+### Completed Features
+
+- [x] Streamlit user interface
+- [x] AI chatbot
+- [x] OpenRouter API integration
+- [x] Mood selection
+- [x] Stress-level assessment
+- [x] Stress-management suggestions
+- [x] Quick stress-help options
+- [x] Mental-health safety instructions
+- [x] GitHub repository
+- [x] Project documentation
+
+### Planned Features
+
+- [ ] Sinhala language support
+- [ ] Improved user interface
+- [ ] Additional testing
+- [ ] Final deployment
+- [ ] User evaluation
+- [ ] Research data analysis
+
+---
+
+## ⚠️ Disclaimer
+
+**MindSupport AI is not a medical or clinical system.**
+
+The information provided by the chatbot is for general wellbeing and educational purposes only.
+
+The chatbot should not be used to diagnose, treat, or manage a mental-health condition.
+
+Students experiencing persistent, severe, or urgent mental-health difficulties should seek appropriate support from a qualified mental-health professional or appropriate support service.
+
+---
+
+## 🎓 Academic Purpose
+
+This project is developed for academic and research purposes to explore the potential role of Artificial Intelligence in supporting university students' mental health in Sri Lanka.
+
+The application is a research prototype and should not be considered a clinical mental-health service.
 
 ---
 
 ## 👩‍💻 Developed For
 
-Academic Research Project
+**Academic Research Project**
 
-Research Topic:
+### Research Topic
 
-The Role of Artificial Intelligence in Supporting University Students' Mental Health in Sri Lanka
+**The Role of Artificial Intelligence in Supporting University Students' Mental Health in Sri Lanka**
 
-Technology: Python + Streamlit + OpenRouter AI
+### Technologies
+
+**Python + Streamlit + OpenRouter AI**
+
+---
+
+## 📄 License
+
+This project is developed for academic and educational purposes.
