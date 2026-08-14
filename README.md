@@ -295,54 +295,30 @@ API credentials are stored using environment variables and should not be include
 The `.env` file must never be uploaded to GitHub.
 
 ---
-## 🌐 Live Application
-
-🚀 **Try MindSupport AI Online:**
-
- Streamlit  app link = mindsupport-ai-3txitmyqtp6zvrlgshmg6q.streamlit.app
-
-The application is deployed using Streamlit Community Cloud and is available online for demonstration and academic research purposes.
-
----
-
 ## 🌐 Deployment
 
-MindSupport AI can be deployed using **Streamlit Community Cloud**.
+MindSupport AI is deployed using **Streamlit Community Cloud**.
 
-### Deployment Steps
+### 🚀 Live Application
 
-1. Push the project source code to GitHub.
-2. Open Streamlit Community Cloud.
-3. Sign in using GitHub.
-4. Create a new application.
-5. Select the repository:
+👉 [Open MindSupport AI](https://mindsupport-ai-3txitmyqtp6zvrlgshmg6q.streamlit.app)
 
-```text
-Imalsha-Dilshani/MindSupport-AI
-```
+### 🔗 GitHub Repository
 
-6. Select the branch:
+[MindSupport-AI](https://github.com/Imalsha-Dilshani/MindSupport-AI)
 
-```text
-main
-```
+### 💻 Technologies
 
-7. Select the main application file:
+- Python
+- Streamlit
+- OpenRouter AI
+- GitHub
+- Streamlit Community Cloud
 
-```text
-app.py
-```
+### 🌍 Live Demo
 
-8. Add the API key using Streamlit Secrets.
-9. Deploy the application.
+**[MindSupport AI – Live Application](https://mindsupport-ai-3txitmyqtp6zvrlgshmg6q.streamlit.app)**
 
-### Streamlit Secrets
-
-For deployment, add the following secret:
-
-```toml
-OPENROUTER_API_KEY = "my_api_key_here"
-```
  
 
 ---
@@ -470,10 +446,7 @@ The application is a research prototype and should not be considered a clinical 
 ### Research Topic
 
 **The Role of Artificial Intelligence in Supporting University Students' Mental Health in Sri Lanka**
-
-### Technologies
-
-**Python + Streamlit + OpenRouter AI**
+ 
 
 ---
 
