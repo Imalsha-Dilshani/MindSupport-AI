@@ -119,10 +119,15 @@ MindSupport-AI/
 ├── .gitignore
 ├── .env
 └── venv/
+ 
+---
 
 ## ⚙️ Installation
+
 Step 1 – Clone the Repository
 git clone https://github.com/Imalsha-Dilshani/MindSupport-AI.git
+
+---
 
 ## 🔑 API Configuration
 
@@ -131,6 +136,8 @@ The application uses an OpenRouter API key to communicate with the AI model.
 Create a .env file in the project root directory.
 
 OPENROUTER_API_KEY=my_api_key_here
+
+---
 
 ## ▶️ Running the Application Locally
 
@@ -144,9 +151,13 @@ Usually, the local application will be available at:
 
 http://localhost:8501
 
+---
+
 ## 🌐 Deployment
 
 The application can be deployed using Streamlit Community Cloud.
+
+---
 
 ## 👩‍💻 Developed For
 
