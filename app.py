@@ -18,6 +18,7 @@ st.set_page_config(
 # -----------------------------
 # OpenRouter Client
 # -----------------------------
+
 api_key = os.getenv("OPENROUTER_API_KEY")
 
 if not api_key:
