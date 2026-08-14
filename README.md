@@ -295,6 +295,15 @@ API credentials are stored using environment variables and should not be include
 The `.env` file must never be uploaded to GitHub.
 
 ---
+## 🌐 Live Application
+
+🚀 **Try MindSupport AI Online:**
+
+[Open MindSupport AI](mindsupport-ai-3txitmyqtp6zvrlgshmg6q.streamlit.app)
+
+The application is deployed using Streamlit Community Cloud and is available online for demonstration and academic research purposes.
+
+---
 
 ## 🌐 Deployment
 
