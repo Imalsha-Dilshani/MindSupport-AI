@@ -181,10 +181,9 @@ Create a `.env` file in the project root directory.
 Add:
 
 ```env
-OPENROUTER_API_KEY=your_api_key_here
+OPENROUTER_API_KEY=my_api_key_here
 ```
 
-Replace `your_api_key_here` with your own OpenRouter API key.
 
 ### ⚠️ API Key Security
 
